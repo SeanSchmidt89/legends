@@ -10,7 +10,7 @@ const Reviews = () => {
   const userList = useSelector((state) => state.users.users);
   useEffect(() => {
     axios
-      .get("https://randomuser.me/api/?results=10")
+      .get("https://randomuser.me/api/?results=5")
       .then((response) => dispatch(getUsers(response.data.results)))
       .catch((error) => console.log(error.massage));
   }, [dispatch]);

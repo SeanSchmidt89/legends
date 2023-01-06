@@ -1,0 +1,61 @@
+.photo-grid {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.grid {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  padding: 1rem;
+}
+
+.pic-one {
+  grid-row: span 3 / span 3;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.pic-two {
+  grid-row: span 2 / span 2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.pic-three {
+  grid-row: span 2 / span 2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.pic-four {
+  grid-row: span 3 / span 3;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.pic-five {
+  grid-row: span 2 / span 2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.info {
+  width: 100%;
+}

@@ -7,6 +7,7 @@ const User = ({ user }) => {
   return (
     <div className="user">
       <img src={user.picture.medium} alt={user.name.first} />
+
       <p>{user.name.first}</p>
       <div className="rating">
         <p>{rating}</p>
