@@ -31,7 +31,16 @@ const PhotoGrid = () => {
           alt="/"
         />
       </div>
-      <div className="info"></div>
+      <div className="info">
+        <div className="info-container">
+          <h2>jfoisdjiofjdsoijfiosd</h2>
+          <p>dfjsadifjiosdjfiojdsifojsdiojfoisdja</p>
+          <p>dfjsadifjiosdjfiojdsifojsdiojfoisdja</p>
+          <p>dfjsadifjiosdjfiojdsifojsdiojfoisdja</p>
+          <p>dfjsadifjiosdjfiojdsifojsdiojfoisdja</p>
+          <p>dfjsadifjiosdjfiojdsifojsdiojfoisdja</p>
+        </div>
+      </div>
     </div>
   );
 };
