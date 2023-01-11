@@ -1,0 +1,37 @@
+.plan-trip {
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.plan-container {
+  width: 90%;
+  height: 550px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  border: 1px solid red;
+}
+
+.img-one {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-row: 1 / span 1;
+  
+}
+
+.img-two {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-row: 1 / span 2;
+}
+
+.img-three {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-row: 2 / span 1;
+}

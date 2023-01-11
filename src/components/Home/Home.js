@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../Hero/Hero";
 import Reviews from "../Reviews/Reviews";
 import PhotoGrid from "../PhotoGrid/PhotoGrid";
+import PlanTrip from "../PlanTrip/PlanTrip";
 import "./Home.css";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
     <div className="home">
       <Hero />
       <PhotoGrid />
+      <PlanTrip />
       {/* <Reviews /> */}
     </div>
   );
