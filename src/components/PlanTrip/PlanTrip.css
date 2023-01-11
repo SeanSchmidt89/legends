@@ -1,17 +1,29 @@
 .plan-trip {
   width: 100%;
   height: 100vh;
+  padding-bottom: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: black;
+  border: 1px solid purple;
+}
+
+.plan-info {
+  width: 90%;
+  max-width: 650px;
+  height: 50vh;
+  background-color: aquamarine;
 }
 
 .plan-container {
   width: 90%;
-  height: 550px;
-  margin: auto;
+  max-width: 650px;
+  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  border: 1px solid red;
+  grid-template-rows: 380px 380px;
+  background-color: aquamarine;
 }
 
 .img-one {
@@ -19,7 +31,6 @@
   height: 100%;
   object-fit: cover;
   grid-row: 1 / span 1;
-  
 }
 
 .img-two {

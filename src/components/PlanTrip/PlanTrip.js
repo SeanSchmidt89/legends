@@ -4,6 +4,9 @@ import "./PlanTrip.css";
 const PlanTrip = () => {
   return (
     <div className="plan-trip">
+      <div className="plan-info">
+
+      </div>
       <div className="plan-container">
         <img
           className="img-one"
