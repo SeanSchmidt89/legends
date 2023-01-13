@@ -1,29 +1,37 @@
 .plan-trip {
   width: 100%;
-  height: 100vh;
-  padding-bottom: 18rem;
+  height: 110vh;
+  padding-bottom: 16rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: black;
-  border: 1px solid purple;
+}
+
+.plan-backdrop {
+  position: relative;
+  width: 90%;
+  max-width: 1400px;
+  height: 60vh;
+  background-color: #99DDDA;
 }
 
 .plan-info {
-  width: 90%;
-  max-width: 650px;
-  height: 50vh;
-  background-color: aquamarine;
+  margin: 6rem 2rem;
+  max-width: 410px;
 }
 
 .plan-container {
-  width: 90%;
-  max-width: 650px;
-  height: 50vh;
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  width: 60%;
+  max-width: 850px;
+  height: 90vh;
   display: grid;
+  gap: 0.5rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 380px 380px;
-  background-color: aquamarine;
 }
 
 .img-one {
@@ -45,4 +53,64 @@
   height: 100%;
   object-fit: cover;
   grid-row: 2 / span 1;
+}
+
+@media screen and (max-width:1250px){
+  .plan-trip {
+    width: 100%;
+    height: 85vh;
+    padding-bottom: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+  
+  .plan-backdrop {
+    position: relative;
+    width: 90%;
+    max-width: 1400px;
+    height: 60vh;
+    background-color: #99DDDA;
+  }
+  
+  .plan-info {
+    margin: 6rem 2rem;
+    max-width: 450px;
+  }
+  
+  .plan-container {
+    position: absolute;
+    top: -2rem;
+    right: 18rem;
+    width: 60%;
+    max-width: 850px;
+    height: 90vh;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 220px 220px 220px;
+  }
+
+  .img-one {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 3 / span 1;
+  }
+  
+  .img-two {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 1 / span 3;
+    grid-column: 3;
+  }
+  
+  .img-three {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-row: 3 / span 1;
+  }
 }
