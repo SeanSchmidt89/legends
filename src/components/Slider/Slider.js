@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Slider.css";
 
 const Slider = () => {
-  let [imgNum, setImgNum] = useState(1);
+  let [imgNum, setImgNum] = useState(0);
   let imgArr = [
     "https://images.unsplash.com/photo-1548209454-8548045387bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2335&q=80",
     "https://images.unsplash.com/photo-1608135003575-9b587f3b0cf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
@@ -10,18 +10,18 @@ const Slider = () => {
   ];
 
   const backHandler = () => {
-    if (imgNum === 1) {
+    if (imgNum === 0) {
       return;
     } else {
-      setImgNum(imgNum--);
+      setImgNum(imgNum - 1);
     }
   };
 
   const forwardHandler = () => {
-    if (imgNum === 4) {
+    if (imgNum === 2) {
       return;
     } else {
-      setImgNum(imgNum++);
+      setImgNum(imgNum + 1);
     }
   };
   return (
