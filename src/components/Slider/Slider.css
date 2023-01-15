@@ -1,6 +1,6 @@
 .slider {
-  width: 900px;
-  height: 40vh;
+  width: 100%;
+  height: 90vh;
   position: relative;
   background: black;
 }
@@ -14,15 +14,23 @@
 .back {
   position: absolute;
   cursor: pointer;
-  left: 1rem;
-  top: 10rem;
+  left: 2rem;
+  top: 27rem;
   color: white;
 }
 
 .forward {
   position: absolute;
   cursor: pointer;
-  right: 1rem;
-  top: 10rem;
+  right: 2rem;
+  top: 27rem;
   color: white;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
