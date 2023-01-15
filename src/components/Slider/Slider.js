@@ -11,7 +11,7 @@ const Slider = () => {
 
   const backHandler = () => {
     if (imgNum === 0) {
-      return;
+      setImgNum(2)
     } else {
       setImgNum(imgNum - 1);
     }
@@ -19,7 +19,7 @@ const Slider = () => {
 
   const forwardHandler = () => {
     if (imgNum === 2) {
-      return;
+      setImgNum(0)
     } else {
       setImgNum(imgNum + 1);
     }
