@@ -1,6 +1,7 @@
 .slider {
   width: 900px;
   height: 40vh;
+  position: relative;
   background: black;
 }
 
@@ -8,4 +9,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.back {
+  position: absolute;
+  cursor: pointer;
+  left: 1rem;
+  top: 10rem;
+  color: white;
+}
+
+.forward {
+  position: absolute;
+  cursor: pointer;
+  right: 1rem;
+  top: 10rem;
+  color: white;
 }

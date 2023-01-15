@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import {
+  MdOutlineArrowBackIos,
+  MdOutlineArrowForwardIos,
+} from "react-icons/md";
 import "./Slider.css";
 
 const Slider = () => {
@@ -11,7 +15,7 @@ const Slider = () => {
 
   const backHandler = () => {
     if (imgNum === 0) {
-      setImgNum(2)
+      setImgNum(2);
     } else {
       setImgNum(imgNum - 1);
     }
@@ -19,7 +23,7 @@ const Slider = () => {
 
   const forwardHandler = () => {
     if (imgNum === 2) {
-      setImgNum(0)
+      setImgNum(0);
     } else {
       setImgNum(imgNum + 1);
     }
@@ -27,9 +31,12 @@ const Slider = () => {
   return (
     <div className="slider">
       <img className="slider-img" src={imgArr[imgNum]} alt="/" />
-      <button onClick={backHandler}>back</button>
-      <button onClick={forwardHandler}>forward</button>
-      {imgNum}
+      <MdOutlineArrowBackIos className="back" onClick={backHandler} size={60} />
+      <MdOutlineArrowForwardIos
+        className="forward"
+        onClick={forwardHandler}
+        size={60}
+      />
     </div>
   );
 };
