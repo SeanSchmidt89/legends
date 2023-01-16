@@ -15,8 +15,9 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 23rem;
-  left: 22rem;
+  top: 22rem;
+  left: 21rem;
+  width: 420px;
   font-family: "Pacifico";
   color: white;
 }

@@ -18,7 +18,7 @@ const Wynwood = () => {
   return (
     <div className="wynwood">
       <Slider data={props} />
-      {/* <div>
+      <div>
         <p>
           Wynwood is an eclectic district in the urban core of Miami, Florida.
           It is home to art galleries, retail stores, antique shops, eclectic
@@ -41,7 +41,7 @@ const Wynwood = () => {
           creative communities in the United States, and where a new generation
           of creative and entrepreneurs want to live, work, eat, play and learn.
         </p>
-      </div> */}
+      </div>
     </div>
   );
 };
