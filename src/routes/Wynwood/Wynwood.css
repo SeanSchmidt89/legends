@@ -1,0 +1,8 @@
+.wynwood h2 {
+    position: fixed;
+    top: 16rem;
+    left: 21rem;
+    font-size: 5rem;
+    color: white;
+    font-family: 'Pacifico';
+}
