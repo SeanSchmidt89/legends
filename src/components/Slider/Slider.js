@@ -5,8 +5,9 @@ import {
 } from "react-icons/md";
 import "./Slider.css";
 
-const Slider = ({ imgArr }) => {
+const Slider = ({ data }) => {
   let [imgNum, setImgNum] = useState(0);
+  let { imgArr, infoArr } = data;
 
   const backHandler = () => {
     if (imgNum === 0) {
@@ -33,6 +34,10 @@ const Slider = ({ imgArr }) => {
         onClick={forwardHandler}
         size={60}
       />
+      <div className="slider-info">
+        <h2>{infoArr[0]}</h2>
+        <p>{infoArr[1]}</p>
+      </div>
     </div>
   );
 };

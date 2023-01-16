@@ -10,11 +10,15 @@ const Wynwood = () => {
     "https://images.unsplash.com/photo-1608135003575-9b587f3b0cf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
     "https://images.unsplash.com/photo-1529326353831-df2fd0f44a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
   ];
+  let infoArr = ["Wynwood", "One of the most happening districts in Miami"];
+  let props = {
+    imgArr,
+    infoArr,
+  };
   return (
     <div className="wynwood">
-      <Slider imgArr={imgArr} />
-      <h2>Wynwood</h2>
-      <div>
+      <Slider data={props} />
+      {/* <div>
         <p>
           Wynwood is an eclectic district in the urban core of Miami, Florida.
           It is home to art galleries, retail stores, antique shops, eclectic
@@ -37,7 +41,7 @@ const Wynwood = () => {
           creative communities in the United States, and where a new generation
           of creative and entrepreneurs want to live, work, eat, play and learn.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

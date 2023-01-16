@@ -11,6 +11,24 @@
   object-fit: cover;
 }
 
+.slider-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 23rem;
+  left: 22rem;
+  font-family: "Pacifico";
+  color: white;
+}
+
+.slider-info h2 {
+  font-size: 3.3rem;
+}
+
+.slider-info p {
+  font-size: 1.4rem;
+}
+
 .back {
   position: absolute;
   cursor: pointer;
