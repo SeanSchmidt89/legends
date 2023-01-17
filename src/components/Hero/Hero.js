@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 const Hero = () => {
+  const [places, setPlaces] = useState(false);
+
+  const placesHandler = () => {
+    setPlaces(!places);
+  };
   return (
     <div className="hero">
       <img
@@ -13,12 +19,30 @@ const Hero = () => {
         <h2>Miami's Premier Travel Co</h2>
         <p>Come explore Miami today</p>
         <p>Book with us and recive exculsive offers</p>
+        <div>
+          <button className="places-btn" onClick={placesHandler}>
+            Explore
+          </button>
+          {places && (
+            <ul>
+              <Link to="/brickell">
+                <li>Brickell</li>
+              </Link>
+              <Link to="/miamibeach">
+                <li>Miami Beach</li>
+              </Link>
+              <Link to="/wynwood">
+                <li>Wynwood</li>
+              </Link>
+              <Link to="/everglades">
+                <li>Everglades</li>
+              </Link>
+            </ul>
+          )}
+        </div>
       </div>
     </div>
   );
 };
 
 export default Hero;
-
-//second background img choice
-//https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80

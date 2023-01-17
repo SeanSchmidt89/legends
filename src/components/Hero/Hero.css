@@ -37,6 +37,25 @@
   font-size: 2rem;
 }
 
+.places-btn {
+  margin-top: 1rem;
+  width: 150px;
+  background: transparent;
+  border: 3px solid #99ddda;
+  font-family: "Pacifico";
+  font-size: 1.1rem;
+  color:#d6b1f7;
+  cursor: pointer;
+}
+
+.hero-text ul {
+  display: flex;
+}
+
+li {
+  padding: 1rem 1rem;
+}
+
 @media screen and (max-width: 1300px) {
   .hero-text {
     left: 13rem;
