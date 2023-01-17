@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <img
-        src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+        src="https://images.unsplash.com/photo-1520716448897-f1cc6b0241ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
         alt="/"
       />
       <div className="overlay"></div>
@@ -19,3 +19,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
+//second background img choice
+//https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80

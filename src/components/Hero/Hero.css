@@ -28,7 +28,7 @@
   left: 22rem;
   width: 600px;
   height: 500px;
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
   font-size: 1.2rem;
   z-index: 5;
 }
@@ -37,14 +37,57 @@
   font-size: 2rem;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
   .hero-text {
-    top: 26rem;
-    left: 14rem;
-    width: 600px;
-    height: 500px;
-    font-family: 'Pacifico';
+    left: 13rem;
     font-size: 1.2rem;
-    z-index: 5;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .hero-text {
+    left: 9rem;
+    font-size: 1.1rem;
+    width: 450px;
+    height: 400px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero img {
+    height: 100vh;
+  }
+
+  .hero-text {
+    left: 3rem;
+    font-size: 0.9rem;
+    width: 320px;
+    height: 300px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero-text {
+    top: 23rem;
+    left: 1.5rem;
+    font-size: 0.8rem;
+    width: 260px;
+    height: 250px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
   }
 }

@@ -86,3 +86,9 @@
     height: 45vh;
   }
 }
+
+@Media screen and (max-width: 680px){
+  .info {
+    font-size: 0.9rem;
+  }
+}

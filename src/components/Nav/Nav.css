@@ -24,3 +24,40 @@
   font-size: 1.1rem;
   margin-right: 1.4rem;
 }
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .nav {
+    padding: 2rem 3rem;
+  }
+
+  .nav h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .nav li {
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    padding: 2rem 1.5rem;
+  }
+
+  .nav h1 {
+    font-size: 2rem;
+  }
+}

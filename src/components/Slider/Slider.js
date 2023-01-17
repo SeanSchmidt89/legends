@@ -28,11 +28,11 @@ const Slider = ({ data }) => {
     <div className="slider">
       <img className="slider-img" src={imgArr[imgNum]} alt="/" />
       <div className="slider-overlay" />
-      <MdOutlineArrowBackIos className="back" onClick={backHandler} size={60} />
+      <MdOutlineArrowBackIos className="back" onClick={backHandler} size={50} />
       <MdOutlineArrowForwardIos
         className="forward"
         onClick={forwardHandler}
-        size={60}
+        size={50}
       />
       <div className="slider-info">
         <h2>{infoArr[0]}</h2>
