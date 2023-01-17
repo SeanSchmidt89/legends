@@ -19,26 +19,25 @@ const Hero = () => {
         <h2>Miami's Premier Travel Co</h2>
         <p>Come explore Miami today</p>
         <p>Book with us and recive exculsive offers</p>
-        <div>
-          <button className="places-btn" onClick={placesHandler}>
-            Explore
-          </button>
-          {places && (
-            <ul>
-              <Link to="/brickell">
-                <li>Brickell</li>
-              </Link>
-              <Link to="/miamibeach">
-                <li>Miami Beach</li>
-              </Link>
-              <Link to="/wynwood">
-                <li>Wynwood</li>
-              </Link>
-              <Link to="/everglades">
-                <li>Everglades</li>
-              </Link>
-            </ul>
-          )}
+        <div className="places-btn">
+          <button onClick={placesHandler}>Explore</button>
+          <ul className={places ? "show" : "hide"}>
+            <Link to="/brickell">
+              <li>Brickell</li>
+            </Link>
+            <Link to="/miamibeach">
+              <li>Miami Beach</li>
+            </Link>
+            <Link to="/wynwood">
+              <li>Wynwood</li>
+            </Link>
+            <Link to="/everglades">
+              <li>Everglades</li>
+            </Link>
+            <Link to="/little-havana">
+              <li>Little Havana</li>
+            </Link>
+          </ul>
         </div>
       </div>
     </div>

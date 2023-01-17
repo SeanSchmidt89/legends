@@ -5,6 +5,7 @@ import LittleHavana from "./routes/LittleHavana/LittleHavana";
 import Wynwood from "./routes/Wynwood/Wynwood";
 import Brickell from "./routes/Brickell/Brickell";
 import MiamiBeach from "./routes/MiamiBeach/MiamiBeach";
+import Everglades from "./routes/Everglades/Everglades";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/wynwood" element={<Wynwood />} />
         <Route path="/brickell" element={<Brickell />} />
         <Route path="/miamibeach" element={<MiamiBeach />} />
+        <Route path="/everglades" element={<Everglades />} />
       </Routes>
     </div>
   );

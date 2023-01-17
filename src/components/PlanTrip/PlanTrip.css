@@ -39,6 +39,7 @@
   height: 100%;
   object-fit: cover;
   grid-row: 1 / span 1;
+  box-shadow: -1px 1px 59px 4px rgba(0,0,0,0.78);
 }
 
 .img-two {
@@ -46,6 +47,7 @@
   height: 100%;
   object-fit: cover;
   grid-row: 1 / span 2;
+  box-shadow: -1px 1px 59px 4px rgba(0,0,0,0.78);
 }
 
 .img-three {
@@ -53,6 +55,7 @@
   height: 100%;
   object-fit: cover;
   grid-row: 2 / span 1;
+  box-shadow: -1px 1px 59px 4px rgba(0,0,0,0.78);
 }
 
 @media screen and (max-width: 1250px) {

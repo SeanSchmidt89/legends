@@ -37,7 +37,8 @@
   font-size: 2rem;
 }
 
-.places-btn {
+
+.places-btn button {
   margin-top: 1rem;
   width: 150px;
   background: transparent;
@@ -46,6 +47,20 @@
   font-size: 1.1rem;
   color:#d6b1f7;
   cursor: pointer;
+}
+
+.hide{
+  position: absolute;
+  color: red;
+  left: -200%;
+  transition: 10s;
+}
+
+.show{
+  position: absolute;
+  color: blue;
+  left: 12;
+  transition: 10s;
 }
 
 .hero-text ul {
