@@ -19,6 +19,7 @@
 .plan-info {
   margin: 6rem 2rem;
   max-width: 410px;
+  font-size: 1.2rem;
 }
 
 .plan-container {
@@ -139,7 +140,7 @@
   .plan-info {
     margin: 10rem 1rem;
     max-width: 390px;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .plan-container {
@@ -183,7 +184,7 @@
   .plan-info {
     margin: 8.5rem 1rem;
     max-width: 390px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .plan-container {

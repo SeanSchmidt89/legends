@@ -37,26 +37,26 @@
   font-size: 2rem;
 }
 
-
 .places-btn button {
   margin-top: 1rem;
+  height: 2.2rem;
   width: 150px;
   background: transparent;
-  border: 3px solid #99ddda;
-  font-family: "Pacifico";
-  font-size: 1.1rem;
-  color:#d6b1f7;
+  border: 3px solid white;
+  font-size: 1rem;
+  font-family: "Bebas Neue";
+  color: #99ddda;
   cursor: pointer;
 }
 
-.hide{
+.hide {
   position: absolute;
   color: red;
   left: -200%;
   transition: 10s;
 }
 
-.show{
+.show {
   position: absolute;
   color: blue;
   left: 12;
@@ -68,7 +68,10 @@
 }
 
 li {
-  padding: 1rem 1rem;
+  margin: 0.8rem 2.2rem;
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: "Bebas Neue";
 }
 
 @media screen and (max-width: 1300px) {

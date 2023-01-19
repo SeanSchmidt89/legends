@@ -58,14 +58,16 @@
   padding: 0.5rem;
 }
 
-.info {
+.photo-grid .info {
   margin-left: 1rem;
   width: 90%;
   max-width: 700px;
   height: 85vh;
   background-color: #d6b1f7;
   padding: 3rem;
+  font-size: 1.6rem;
 }
+
 
 @media screen and (max-width: 1250px) {
   .photo-grid {
@@ -80,15 +82,23 @@
     height: 60vh;
   }
 
-  .info {
+   .photo-grid .info {
     margin-left: 0rem;
     width: 93%;
-    height: 45vh;
+    height: 50vh;
+    font-size: 1.3rem;
   }
 }
 
 @Media screen and (max-width: 680px){
-  .info {
-    font-size: 0.9rem;
+   .photo-grid .info {
+    font-size: 1.1rem;
+  }
+}
+
+@Media screen and (max-width: 460px){
+   .photo-grid .info {
+    padding: 2rem 3rem;
+    font-size: 1rem;
   }
 }
