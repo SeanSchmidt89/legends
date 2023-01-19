@@ -68,7 +68,8 @@
 }
 
 li {
-  margin: 0.8rem 2.2rem;
+  margin: 0.8rem;
+  margin-right: 1rem;
   width: 100%;
   font-size: 1.4rem;
   font-family: "Bebas Neue";

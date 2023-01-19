@@ -1,19 +1,23 @@
 import React from "react";
+import Slider from '../..//components/Slider/Slider'
 import "./LittleHavana.css";
 
 const LittleHavana = () => {
+  let imgArr = [
+    "https://images.unsplash.com/photo-1558294417-831b4c991662?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80",
+    "https://images.unsplash.com/photo-1624477836421-670f3ed080fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80",
+    "https://images.unsplash.com/photo-1570396662990-ec320a4d6ce7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
+    "https://images.unsplash.com/photo-1558294417-4ab8762c8ae8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80",
+    "https://images.unsplash.com/photo-1541293712104-77db9e7752ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+  ];
+  let infoArr = ["Wynwood", "One of the most happening districts in Miami"];
+  let props = {
+    imgArr,
+    infoArr,
+  };
   return (
     <div className="little-havana">
-      <img
-        src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
-        alt="/"
-      />
-      <div className="overlay"></div>
-      <div className="hero-text">
-        <h2>Miami's Premier Travel Co</h2>
-        <p>Come explore Miami today</p>
-        <p>Book with us and recive exculsive offers</p>
-      </div>
+      <Slider data={props} />
     </div>
   );
 };
