@@ -23,19 +23,19 @@ const Hero = () => {
           <button onClick={placesHandler}>Explore</button>
           <ul className={places ? "show" : "hide"}>
             <Link to="/brickell">
-              <li>Brickell</li>
+              <li><span>___</span> Brickell</li>
             </Link>
             <Link to="/miamibeach">
-              <li>Miami Beach</li>
+              <li><span>___</span> Miami Beach</li>
             </Link>
             <Link to="/wynwood">
-              <li>Wynwood</li>
+              <li><span>___</span> Wynwood</li>
             </Link>
             <Link to="/everglades">
-              <li>Everglades</li>
+              <li><span>___</span> Everglades</li>
             </Link>
             <Link to="/little-havana">
-              <li>Little Havana</li>
+              <li><span>___</span> Little Havana</li>
             </Link>
           </ul>
         </div>

@@ -37,42 +37,59 @@
   font-size: 2rem;
 }
 
-.places-btn button {
-  margin-top: 1rem;
-  height: 2.2rem;
-  width: 150px;
-  background: transparent;
-  border: 3px solid white;
-  font-size: 1rem;
-  font-family: "Bebas Neue";
-  color: #99ddda;
-  cursor: pointer;
-}
 
 .hide {
   position: absolute;
   color: red;
   left: -200%;
-  transition: 10s;
 }
 
 .show {
+  margin-top: 1.1rem;
+  margin-left: 0.2rem;
   position: absolute;
   color: blue;
   left: 12;
-  transition: 10s;
+}
+
+.places-btn button {
+  margin-top: 1rem;
+  height: 2.2rem;
+  width: 130px;
+  background: transparent;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  font-family: "Bebas Neue";
+  color: #99ddda;
+  cursor: pointer;
+}
+
+.places-btn button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .hero-text ul {
   display: flex;
+  flex-direction: column;
 }
 
-li {
+.places-btn li {
   margin: 0.8rem;
-  margin-right: 1rem;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: "Bebas Neue";
+  color: #99ddda;
+}
+
+.places-btn li:hover {
+  color: white;
+}
+
+li span {
+  color: white;
+  padding-bottom: 1rem;
+  position:relative;
+  top: -0.5rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -81,6 +98,7 @@ li {
     font-size: 1.2rem;
   }
 }
+
 
 @media screen and (max-width: 950px) {
   .hero-text {
@@ -92,6 +110,27 @@ li {
 
   .hero-text h2 {
     font-size: 1.8rem;
+  }
+
+  .show {
+    margin-top: 0.6rem;
+    margin-left: 0.2rem;
+    position: absolute;
+    color: blue;
+    left: 12;
+  }
+  
+  .places-btn button {
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 125px;
+    font-size: 1.05rem;
+  }
+  
+  .places-btn li {
+    margin: 0.8rem;
+    width: 100%;
+    font-size: 1.2rem;
   }
 }
 
@@ -114,6 +153,27 @@ li {
   .hero-text h2 {
     font-size: 1.6rem;
   }
+
+  .show {
+    margin-top: 0.6rem;
+    margin-left: 0.2rem;
+    position: absolute;
+    color: blue;
+    left: 12;
+  }
+  
+  .places-btn button {
+    margin-top: 0.4rem;
+    height: 1.6rem;
+    width: 115px;
+    font-size: 0.95rem;
+  }
+  
+  .places-btn li {
+    margin: 0.8rem;
+    width: 100%;
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -127,5 +187,26 @@ li {
 
   .hero-text h2 {
     font-size: 1.2rem;
+  }
+
+  .show {
+    margin-top: 0.6rem;
+    margin-left: -0.6rem;
+    position: absolute;
+    color: blue;
+    left: 12;
+  }
+  
+  .places-btn button {
+    margin-top: 0.4rem;
+    height: 1.5rem;
+    width: 90px;
+    font-size: 0.90rem;
+  }
+  
+  .places-btn li {
+    margin: 0.8rem;
+    width: 100%;
+    font-size: 1.1rem;
   }
 }
