@@ -1,5 +1,6 @@
 import React from "react";
-import Slider from '../..//components/Slider/Slider'
+import Slider from "../..//components/Slider/Slider";
+import Footer from "../../components/Footer/Footer";
 import "./LittleHavana.css";
 
 const LittleHavana = () => {
@@ -18,6 +19,7 @@ const LittleHavana = () => {
   return (
     <div className="little-havana">
       <Slider data={props} />
+      <Footer />
     </div>
   );
 };

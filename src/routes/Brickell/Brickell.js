@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../../components/Slider/Slider";
+import Footer from "../../components/Footer/Footer";
 import "./Brickell.css";
 
 const Brickell = () => {
@@ -21,6 +22,7 @@ const Brickell = () => {
   return (
     <div>
       <Slider data={props} />
+      <Footer />
     </div>
   );
 };

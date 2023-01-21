@@ -38,6 +38,7 @@ const PlanTrip = () => {
           />
         </div>
       </div>
+      <div className="bar" />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Hero from "../Hero/Hero";
 import Reviews from "../Reviews/Reviews";
 import PhotoGrid from "../PhotoGrid/PhotoGrid";
 import PlanTrip from "../PlanTrip/PlanTrip";
+import Footer from "../Footer/Footer";
 import "./Home.css";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <PlanTrip />
       <PhotoGrid />
       {/* <Reviews /> */}
+      <Footer />
     </div>
   );
 };

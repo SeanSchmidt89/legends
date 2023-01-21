@@ -7,6 +7,7 @@ import Brickell from "./routes/Brickell/Brickell";
 import MiamiBeach from "./routes/MiamiBeach/MiamiBeach";
 import Everglades from "./routes/Everglades/Everglades";
 
+
 function App() {
   return (
     <div className="App">

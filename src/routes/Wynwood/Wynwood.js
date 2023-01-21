@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../../components/Slider/Slider";
+import Footer from "../../components/Footer/Footer";
 import "./Wynwood.css";
 
 const Wynwood = () => {
@@ -42,6 +43,7 @@ const Wynwood = () => {
           of creative and entrepreneurs want to live, work, eat, play and learn.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

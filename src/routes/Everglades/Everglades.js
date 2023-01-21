@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../../components/Slider/Slider";
+import Footer from "../../components/Footer/Footer";
 import "./Everglades.css";
 
 const Everglades = () => {
@@ -22,6 +23,7 @@ const Everglades = () => {
   return (
     <div>
       <Slider data={props} />
+      <Footer />
     </div>
   );
 };
