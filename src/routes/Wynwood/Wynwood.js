@@ -49,3 +49,36 @@ const Wynwood = () => {
 };
 
 export default Wynwood;
+
+class MaxBinaryHeap {
+  constructor() {
+    this.values = [41, 39, 33, 18, 27, 12];
+  }
+
+  bubbleUp() {
+    let idx = this.values.length - 1;
+    const element = this.values[idx];
+    while (idx > 0) {
+      let parentIdx = Math.floor((idx - 1) / 2);
+      let parent = this.values[parentIdx];
+      if (element <= parent) break;
+      this.values[parentIdx] = element;
+      this.values[idx] = parent;
+      idx = parentIdx;
+    }
+  }
+
+  insert(val) {
+    this.values.push(val);
+    this.bubbleUp();
+    return this
+  }
+}
+
+let heap = new MaxBinaryHeap();
+heap.insert(55);
+
+//bubble up
+//find its parent, index -1 divide by 2 and floor
+//compare the value at that index to parent
+//find what ones bigger, if last index is bigger then swap with parent

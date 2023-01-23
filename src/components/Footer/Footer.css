@@ -1,6 +1,33 @@
 .footer {
-  height: 90vh;
+  height: 40vh;
   width: 100%;
   color: white;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media a {
+  margin: 0 0.7rem;
+}
+
+.copy-right {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
