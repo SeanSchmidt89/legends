@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../../components/Slider/Slider";
+import AreaInfo from "../../components/AreaInfo/AreaInfo";
 import Footer from "../../components/Footer/Footer";
 import "./MiamiBeach.css";
 
@@ -23,6 +24,7 @@ const MiamiBeach = () => {
   return (
     <div>
       <Slider data={props} />
+      <AreaInfo />
       <Footer />
     </div>
   );

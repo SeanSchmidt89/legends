@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../..//components/Slider/Slider";
+import AreaInfo from "../../components/AreaInfo/AreaInfo";
 import Footer from "../../components/Footer/Footer";
 import "./LittleHavana.css";
 
@@ -19,6 +20,7 @@ const LittleHavana = () => {
   return (
     <div className="little-havana">
       <Slider data={props} />
+      <AreaInfo />
       <Footer />
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../../components/Slider/Slider";
+import AreaInfo from "../../components/AreaInfo/AreaInfo";
 import Footer from "../../components/Footer/Footer";
 import "./Wynwood.css";
 
@@ -19,6 +20,7 @@ const Wynwood = () => {
   return (
     <div className="wynwood">
       <Slider data={props} />
+      <AreaInfo />
       <div>
         <p>
           Wynwood is an eclectic district in the urban core of Miami, Florida.
@@ -71,7 +73,7 @@ class MaxBinaryHeap {
   insert(val) {
     this.values.push(val);
     this.bubbleUp();
-    return this
+    return this;
   }
 }
 

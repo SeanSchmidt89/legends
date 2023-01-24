@@ -31,3 +31,60 @@
   flex-direction: column;
   align-items: center;
 }
+
+.social-media-small {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .social-media {
+    margin-bottom: 1.5rem;
+  }
+
+  .social-media a {
+    margin: 0 0.5rem;
+  }
+
+  .copy-right {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer {
+    height: 35vh;
+  }
+  .social-media {
+    display: none;
+  }
+
+  .copy-right {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .copy-right span {
+    position: absolute;
+    top: 0.05rem;
+    right: 6.95rem;
+  }
+
+  .social-media-small {
+    display: flex;
+    margin-bottom: 1.2rem;
+  }
+
+  .social-media-small a {
+    margin: 0 0.8rem;
+  }
+}

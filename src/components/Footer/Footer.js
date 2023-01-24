@@ -31,6 +31,23 @@ const Footer = () => {
             <RiSnapchatLine size={35} />
           </Link>
         </div>
+        <div className="social-media-small">
+          <Link to="/">
+            <CiFacebook size={23} />
+          </Link>
+          <Link to="/">
+            <AiOutlineInstagram size={23} />
+          </Link>
+          <Link to="/">
+            <FiTwitter size={23} />
+          </Link>
+          <Link to="/">
+            <AiOutlineYoutube size={23} />
+          </Link>
+          <Link to="/">
+            <RiSnapchatLine size={23} />
+          </Link>
+        </div>
         <div className="copy-right">
           <p>
             <span>
