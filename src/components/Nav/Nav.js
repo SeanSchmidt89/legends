@@ -10,6 +10,10 @@ const Nav = () => {
   const sideNavHandler = () => {
     setSideNav(!sideNav);
   };
+
+  sideNav
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "auto");
   return (
     <div className="nav">
       <Link to="/">
