@@ -13,6 +13,9 @@ const Wynwood = () => {
     "https://images.unsplash.com/photo-1529326353831-df2fd0f44a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
   ];
   let infoArr = ["Wynwood", "One of the most happening districts in Miami"];
+  let areaInfo = [
+    "Wynwood is a neighborhood in Miami, Florida known for its street art, trendy restaurants, and boutique shops. It is located just north of Downtown Miami and is home to the Wynwood Arts District, which features over 70 art galleries, museums, and collections. The neighborhood is also home to a variety of bars, nightclubs, and music venues, making it a popular destination for nightlife. Many of the buildings in the area have been repurposed into art spaces, making the neighborhood a unique blend of urban and artistic. Additionally, Wynwood is also home to the Wynwood Walls, a collection of large-scale murals and street art, which attracts visitors from all over the world. Overall, Wynwood is a vibrant, eclectic neighborhood that offers a diverse range of experiences for visitors.",
+  ];
   let props = {
     imgArr,
     infoArr,
@@ -20,7 +23,7 @@ const Wynwood = () => {
   return (
     <div className="wynwood">
       <Slider data={props} />
-      <AreaInfo />
+      <AreaInfo data={areaInfo} />
       <div>
         <p>
           Wynwood is an eclectic district in the urban core of Miami, Florida.

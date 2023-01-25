@@ -17,6 +17,9 @@ const MiamiBeach = () => {
     "Miami Beach",
     "a slender, nine-mile-long barrier island along the Atlantic Ocean",
   ];
+  let areaInfo = [
+    "Miami Beach is a barrier island located east of Miami, Florida. Known for its white sand beaches, turquoise waters, and vibrant nightlife, Miami Beach is a popular destination for both tourists and locals. The area is home to several iconic neighborhoods, including South Beach, which is famous for its Art Deco architecture and lively atmosphere. Ocean Drive is one of the most famous street in the area, known for its restaurants, bars, and clubs that stay open until the early hours of the morning. Miami Beach also offers a wide range of activities, from water sports such as swimming, jet skiing, and parasailing, to shopping, dining, and entertainment. It's a perfect place for those who want to experience the sun, sand, and sea.",
+  ];
   let props = {
     imgArr,
     infoArr,
@@ -24,7 +27,7 @@ const MiamiBeach = () => {
   return (
     <div>
       <Slider data={props} />
-      <AreaInfo />
+      <AreaInfo data={areaInfo}/>
       <Footer />
     </div>
   );

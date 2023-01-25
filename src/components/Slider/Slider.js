@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { MdKeyboardBackspace } from "react-icons/md";
 import {
   MdOutlineArrowBackIos,
   MdOutlineArrowForwardIos,
@@ -37,6 +39,16 @@ const Slider = ({ data }) => {
       <div className="slider-info">
         <h2>{infoArr[0]}</h2>
         <p>{infoArr[1]}</p>
+        <div className="back-btn">
+          <Link to="/">
+            <p>
+              <span>
+                <MdKeyboardBackspace size={26} />
+              </span>
+              back
+            </p>
+          </Link>
+        </div>
       </div>
     </div>
   );
