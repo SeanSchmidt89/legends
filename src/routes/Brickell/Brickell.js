@@ -16,6 +16,9 @@ const Brickell = () => {
     "Brickell",
     "The city's financial center, where glittering business towers and luxury condos tower over Biscayne Bay",
   ];
+  let areaInfo = [
+    "Brickell is a neighborhood located in the heart of Miami, Florida. Known for its bustling financial district and upscale residential developments, Brickell offers a mix of luxury high-rise condos, apartments and office buildings. The area is home to many of the city's top restaurants, bars, and shops, as well as the Miami Circle, a historic archaeological site featuring a circular arrangement of limestone boulders. Additionally, Brickell is also popular for its scenic waterfront parks and marinas, offering stunning views of Biscayne Bay. With easy access to public transportation and major highways, Brickell is a convenient and desirable location for both business and leisure.",
+  ];
   let props = {
     imgArr,
     infoArr,
@@ -23,7 +26,7 @@ const Brickell = () => {
   return (
     <div>
       <Slider data={props} />
-      <AreaInfo />
+      <AreaInfo data={areaInfo}/>
       <Footer />
     </div>
   );

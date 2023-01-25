@@ -6,18 +6,18 @@ const PlanTrip = () => {
     <div className="plan-trip">
       <div className="plan-backdrop">
         <div className="plan-info">
-          <h2>jfoisdjiofjdsoijfiosd</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          <h2> Miami, </h2>
           <p>
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat.
+            a vibrant and exciting city that offers something for everyone. From
+            the stunning beaches and crystal clear waters to the bustling
+            nightlife and delicious culinary scene, Miami is the perfect
+            destination for your next vacation. With Legends travel Co,
+            you'll be able to experience all that this city has to offer, from
+            exploring the Art Deco District and visiting Little Havana to
+            indulging in world-class shopping and dining. Whether you're looking
+            for a romantic getaway or a fun-filled family vacation, our
+            experienced travel experts will help you plan the trip of a
+            lifetime.
           </p>
         </div>
         <div className="plan-container">
