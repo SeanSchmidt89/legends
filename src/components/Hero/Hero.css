@@ -30,14 +30,11 @@
   height: 500px;
   font-family: "Pacifico";
   font-size: 1.2rem;
-  z-index: 5;
-  
 }
 
 .hero-text h2 {
   font-size: 2rem;
 }
-
 
 .hide {
   position: absolute;
@@ -89,7 +86,7 @@
 li span {
   color: white;
   padding-bottom: 1rem;
-  position:relative;
+  position: relative;
   top: -0.5rem;
 }
 
@@ -99,7 +96,6 @@ li span {
     font-size: 1.2rem;
   }
 }
-
 
 @media screen and (max-width: 950px) {
   .hero-text {
@@ -120,14 +116,14 @@ li span {
     color: blue;
     left: 12;
   }
-  
+
   .places-btn button {
     margin-top: 0.5rem;
     height: 2rem;
     width: 125px;
     font-size: 1.05rem;
   }
-  
+
   .places-btn li {
     margin: 0.8rem;
     width: 100%;
@@ -162,14 +158,14 @@ li span {
     color: blue;
     left: 12;
   }
-  
+
   .places-btn button {
     margin-top: 0.4rem;
     height: 1.6rem;
     width: 115px;
     font-size: 0.95rem;
   }
-  
+
   .places-btn li {
     margin: 0.8rem;
     width: 100%;
@@ -197,14 +193,14 @@ li span {
     color: blue;
     left: 12;
   }
-  
+
   .places-btn button {
     margin-top: 0.4rem;
     height: 1.5rem;
     width: 90px;
-    font-size: 0.90rem;
+    font-size: 0.9rem;
   }
-  
+
   .places-btn li {
     margin: 0.8rem;
     width: 100%;

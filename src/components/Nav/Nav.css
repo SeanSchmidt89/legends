@@ -29,6 +29,10 @@
   display: none;
 }
 
+.x {
+  display: none;
+}
+
 @media screen and (max-width: 850px) {
   .nav {
     padding: 2rem 3rem;
@@ -36,6 +40,31 @@
 
   .nav h1 {
     font-size: 2.2rem;
+  }
+
+  .side-nav {
+    background: black;
+    border-left: 4px solid#99ddda;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 40%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+  }
+
+  .side-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-nav li {
+    margin: 2rem 0rem;
   }
 
   .nav-links {
@@ -47,14 +76,29 @@
     cursor: pointer;
   }
 
+  .x {
+    display: flex;
+    cursor: pointer;
+    z-index: 20;
+  }
+
   .nav li {
     margin-right: 0rem;
   }
 }
 
 @media screen and (max-width: 400px) {
+  .side-nav {
+    left: 30%;
+  }
+
   .nav {
     padding: 2rem 1.5rem;
+  }
+
+  .x {
+    display: flex;
+    cursor: pointer;
   }
 
   .nav h1 {
