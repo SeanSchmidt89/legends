@@ -11,8 +11,8 @@ const PlanTrip = () => {
             a vibrant and exciting city that offers something for everyone. From
             the stunning beaches and crystal clear waters to the bustling
             nightlife and delicious culinary scene, Miami is the perfect
-            destination for your next vacation. With Legends travel Co,
-            you'll be able to experience all that this city has to offer, from
+            destination for your next vacation. With Legends travel Co, you'll
+            be able to experience all that this city has to offer, from
             exploring the Art Deco District and visiting Little Havana to
             indulging in world-class shopping and dining. Whether you're looking
             for a romantic getaway or a fun-filled family vacation, our
@@ -23,7 +23,7 @@ const PlanTrip = () => {
         <div className="plan-container">
           <img
             className="img-one"
-            src="https://images.unsplash.com/photo-1520716448897-f1cc6b0241ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80"
+            src="https://images.unsplash.com/photo-1558951412-8845d2b0f2fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
             alt="/"
           />
           <img

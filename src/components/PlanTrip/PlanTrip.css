@@ -19,10 +19,11 @@
 }
 
 .plan-info {
-  margin: 6rem 2rem;
-  max-width: 410px;
-  font-size: 1.2rem;
+  margin: 5rem 2rem;
+  max-width: 390px;
+  font-size: 1.4rem;
 }
+
 
 .plan-container {
   position: absolute;
@@ -87,8 +88,9 @@
   }
 
   .plan-info {
-    margin: 6rem 2rem;
-    max-width: 450px;
+    margin: 3rem 2rem;
+    max-width: 440px;
+    font-size: 1.3rem;
   }
 
   .plan-container {
@@ -131,7 +133,8 @@
 @media screen and (max-width: 840px) {
   .plan-info {
     margin: 3rem 2rem;
-    max-width: 320px;
+    max-width: 310px;
+    font-size: 1.1rem;
   }
 
   .plan-container {
@@ -169,8 +172,8 @@
 
 @media screen and (max-width: 680px) {
   .plan-info {
-    margin: 10rem 1rem;
-    max-width: 390px;
+    margin: 9.5rem 1.5rem;
+    max-width: 480px;
     font-size: 1.1rem;
   }
 
@@ -220,7 +223,7 @@
   }
 
   .plan-info {
-    margin: 8.5rem 1rem;
+    margin: 8.2rem 1rem;
     max-width: 390px;
     font-size: 1rem;
   }

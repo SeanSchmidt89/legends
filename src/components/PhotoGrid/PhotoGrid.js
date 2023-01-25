@@ -32,19 +32,32 @@ const PhotoGrid = () => {
         />
       </div>
       <div className="info">
-        <p>
-          Miami is a vibrant and exciting city that offers something for
-          everyone. From the stunning beaches and crystal clear waters to the
-          bustling nightlife and delicious culinary scene, Miami is the perfect
-          destination for your next vacation. With our Miami travel company,
-          you'll be able to experience all that this city has to offer, from
-          exploring the Art Deco District and visiting Little Havana to
-          indulging in world-class shopping and dining. Whether you're looking
-          for a romantic getaway or a fun-filled family vacation, our
-          experienced travel experts will help you plan the trip of a lifetime.
-          So why wait? Book your Miami vacation today and experience the magic
-          of this incredible city!
-        </p>
+      <h2>Legends</h2>
+        <ul>
+          <li>
+            Competitive prices and special deals on travel packages.
+          </li>
+          <li>
+            Providing a wide range of options to choose from,
+            catering to different interests and budgets.
+          </li>
+          <li>
+            Offering personalized service and 24/7 customer support for a smooth
+            and stress-free trip.
+          </li>
+          <li>
+            Having access to exclusive deals and promotions on flights, hotels,
+            and activities.
+          </li>
+          <li>
+            Having a team of experienced travel experts who can provide
+            destination recommendations and insider tips.
+          </li>
+          <li>
+            Providing flexible booking options and the ability to make changes
+            to your trip as needed.
+          </li>
+        </ul>
       </div>
     </div>
   );
