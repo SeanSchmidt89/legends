@@ -84,7 +84,14 @@
 
   .nav li {
     margin-right: 0rem;
+    display: flex;
   }
+
+  li p {
+    padding: 0rem 0.2rem;
+    color: #99ddda;
+  }
+
 }
 
 @media screen and (max-width: 400px) {

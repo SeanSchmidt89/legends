@@ -19,19 +19,37 @@ const Nav = () => {
       <Link to="/">
         <h1>Legends</h1>
       </Link>
-      <div className={!sideNav ? "nav-links" : "side-nav"}>
-        <ul>
-          <Link onClick={sideNavHandler} to="/">
-            <li>Home</li>
-          </Link>
-          <Link onClick={sideNavHandler} to="/">
-            <li>Catalog</li>
-          </Link>
-          <Link onClick={sideNavHandler} to="/">
-            <li>About</li>
-          </Link>
-        </ul>
-      </div>
+      {!sideNav ? (
+        <div className="nav-links">
+          <ul>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/">
+              <li>Catalog</li>
+            </Link>
+            <Link to="/">
+              <li>About</li>
+            </Link>
+          </ul>
+        </div>
+      ) : (
+        <div className="side-nav">
+          <ul>
+            <Link onClick={sideNavHandler} to="/">
+              <li>
+                <p>-</p>Home<p>-</p>
+              </li>
+            </Link>
+            <Link onClick={sideNavHandler} to="/">
+              <li><p>-</p>Catalog<p>-</p></li>
+            </Link>
+            <Link onClick={sideNavHandler} to="/">
+              <li><p>-</p>About<p>-</p></li>
+            </Link>
+          </ul>
+        </div>
+      )}
       {!sideNav ? (
         <RxHamburgerMenu
           className="hamburger"
