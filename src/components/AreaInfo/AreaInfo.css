@@ -1,6 +1,6 @@
 .area-info {
   width: 100%;
-  height: 100vh;
+  height: 115vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,7 @@
 }
 
 .area-data {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +19,184 @@
   height: 85vh;
 }
 
-.area-info p {
+.area-info .area-text {
+  position: absolute;
+  top: 4rem;
+  right: 3rem;
   width: 500px;
-  color: red;
+}
+
+.area-img {
+  position: absolute;
+  left: -5rem;
+  top: -3rem;
+  width: 600px;
+  height: 880px;
+}
+
+.area-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.area-info p {
+  font-size: 1.8rem;
+}
+
+.img-overlay {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .area-data {
+    max-width: 850px;
+  }
+
+  .area-info .area-text {
+    top: 3.5rem;
+    right: 2rem;
+    width: 360px;
+  }
+
+  .area-img {
+    left: -4rem;
+    top: -1rem;
+    width: 500px;
+    height: 830px;
+  }
+
+  .area-info p {
+    font-size: 1.55rem;
+  }
+
+  .img-overlay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .area-data {
+    max-width: 690px;
+    height: 75vh;
+  }
+
+  .area-info .area-text {
+    top: 3.5rem;
+    right: 2rem;
+    width: 250px;
+  }
+
+  .area-img {
+    left: 0rem;
+    top: -1.8rem;
+    width: 380px;
+    height: 760px;
+  }
+
+  .area-info p {
+    font-size: 1.2rem;
+  }
+
+  .img-overlay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .area-data {
+    max-width: 690px;
+    height: 75vh;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .area-info .area-text {
+    position: absolute;
+    display: flex;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 300px;
+    z-index: 20;
+  }
+
+  .area-img {
+    position: absolute;
+    display: flex;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 420px;
+    height: 800px;
+  }
+
+  .area-info p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .img-overlay {
+    position: absolute;
+    display: flex;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 420px;
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  .area-data {
+    max-width: 390px;
+    height: 75vh;
+    background-color: transparent;
+    position: relative;
+  }
+
+  .area-info .area-text {
+    position: absolute;
+    display: flex;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 280px;
+    z-index: 20;
+  }
+
+  .area-img {
+    position: absolute;
+    display: flex;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 360px;
+    height: 680px;
+  }
+
+  .area-info p {
+    font-size: 1.05rem;
+    line-height: 185%;
+    text-align: center;
+  }
+
+  .img-overlay {
+    position: absolute;
+    display: flex;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 360px;
+    height: 680px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }

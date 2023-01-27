@@ -11,6 +11,7 @@ const Brickell = () => {
     "https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80",
     "https://images.unsplash.com/photo-1530686577637-0ccce382b327?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2734&q=80",
     "https://images.unsplash.com/photo-1546709344-8be01dfbc721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
+    "https://images.unsplash.com/photo-1572875198816-5f48845774e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1326&q=80"
   ];
   let infoArr = [
     "Brickell",
@@ -22,11 +23,12 @@ const Brickell = () => {
   let props = {
     imgArr,
     infoArr,
+    areaInfo
   };
   return (
     <div>
       <Slider data={props} />
-      <AreaInfo data={areaInfo}/>
+      <AreaInfo data={props}/>
       <Footer />
     </div>
   );
