@@ -7,9 +7,25 @@
 }
 
 .container {
-  max-width: 700px;
+  position: relative;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1100px;
+  height: 400px;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 11rem;
+  left: 0rem;
+  cursor: pointer;
+}
+
+.forward-arrow {
+  position: absolute;
+  top: 11rem;
+  right: 0rem;
+  cursor: pointer;
 }

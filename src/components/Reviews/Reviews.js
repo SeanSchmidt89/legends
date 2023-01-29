@@ -1,26 +1,43 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getUsers } from "../../store/userSlice";
 import User from "../User/User";
 import axios from "axios";
+import {
+  MdOutlineArrowBackIos,
+  MdOutlineArrowForwardIos,
+} from "react-icons/md";
 import "./Reviews.css";
 
 const Reviews = () => {
   const dispatch = useDispatch();
+  const [moreReviews, setMoreReviews] = useState(false);
   const userList = useSelector((state) => state.users.users);
+  const moreReivewHandler = () => {
+    setMoreReviews(!moreReviews);
+  };
   useEffect(() => {
     axios
-      .get("https://randomuser.me/api/?results=5")
+      .get("https://randomuser.me/api/?results=3")
       .then((response) => dispatch(getUsers(response.data.results)))
       .catch((error) => console.log(error.massage));
-  }, [dispatch]);
+  }, [dispatch, moreReviews]);
   return (
     <div className="reviews">
-      Reviews
       <div className="container">
         {userList.map((item) => (
           <User key={item.id} user={item} />
         ))}
+        <MdOutlineArrowBackIos
+          className="back-arrow"
+          onClick={moreReivewHandler}
+          size={35}
+        />
+        <MdOutlineArrowForwardIos
+          className="forward-arrow"
+          onClick={moreReivewHandler}
+          size={35}
+        />
       </div>
     </div>
   );
