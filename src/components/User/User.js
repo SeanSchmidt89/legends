@@ -4,7 +4,7 @@ import { FaRegStar, FaRegStarHalf } from "react-icons/fa";
 import "./User.css";
 
 const User = ({ user }) => {
-  const review = useSelector((state) => state.users.reviews);
+  const review = useSelector((state) => state.users.reviews)
   let rating = Math.ceil(Math.random() * (10 - 4) + 4);
   let rand = Math.floor(Math.random() * 14);
   return (
@@ -51,3 +51,7 @@ const User = ({ user }) => {
 };
 
 export default User;
+
+const arr = [0, 1, 2, 3, 4, 5];
+
+console.log(arr.slice(0, 2));
