@@ -47,12 +47,12 @@ const Reviews = () => {
         <MdOutlineArrowBackIos
           className="back-arrow"
           onClick={moreReivewHandler}
-          size={35}
+          size={28}
         />
         <MdOutlineArrowForwardIos
           className="forward-arrow"
           onClick={moreReivewHandler}
-          size={35}
+          size={28}
         />
       </div>
     </div>

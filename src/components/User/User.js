@@ -4,7 +4,7 @@ import { FaRegStar, FaRegStarHalf } from "react-icons/fa";
 import "./User.css";
 
 const User = ({ user }) => {
-  const review = useSelector((state) => state.users.reviews)
+  const review = useSelector((state) => state.users.reviews);
   let rating = Math.ceil(Math.random() * (10 - 4) + 4);
   let rand = Math.floor(Math.random() * 14);
   return (
@@ -14,34 +14,40 @@ const User = ({ user }) => {
       <div className="rating">
         {rating === 5 && (
           <div>
-            <FaRegStar /> <FaRegStar /> <FaRegStarHalf />
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStarHalf size={12} />
           </div>
         )}
         {rating === 6 && (
           <div>
-            <FaRegStar /> <FaRegStar /> <FaRegStar />
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStar size={12} />
           </div>
         )}
         {rating === 7 && (
           <div>
-            <FaRegStar /> <FaRegStar /> <FaRegStar /> <FaRegStarHalf />
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStar size={12} /> <FaRegStarHalf size={12} />
           </div>
         )}
         {rating === 8 && (
           <div>
-            <FaRegStar /> <FaRegStar /> <FaRegStar /> <FaRegStar />
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStar size={12} /> <FaRegStar size={12} />
           </div>
         )}
         {rating === 9 && (
           <div>
-            <FaRegStar /> <FaRegStar /> <FaRegStar /> <FaRegStar />{" "}
-            <FaRegStarHalf />
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStarHalf size={12} />
           </div>
         )}
         {rating === 10 && (
           <div>
-            <FaRegStar /> <FaRegStar /> <FaRegStar /> <FaRegStar />{" "}
-            <FaRegStar />
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+            <FaRegStar size={12} />
           </div>
         )}
       </div>

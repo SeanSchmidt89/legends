@@ -1,13 +1,17 @@
 .user {
-  width: 350px;
-  height: 250px;
+  width: 200px;
+  height: 300px;
   margin: 0 2rem;
+  padding: 2.2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   font-size: 1rem;
   font-family: "Pacifico";
+  border: 3px solid #99ddda;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .user img {
@@ -24,7 +28,45 @@
 .review {
   margin-top: 1rem;
   font-family: "Bebas Neue";
-  font-size: 1rem;
+  font-size: 0.85rem;
   height: 150px;
-  width: 220px;
+  width: 140px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .user {
+    width: 140px;
+    height: 290px;
+    margin: 0 0.3rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    font-family: "Pacifico";
+    border: 2px solid #99ddda;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .user img {
+    border-radius: 35px;
+    padding-bottom: 0.2rem;
+  }
+  
+  .user .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .review {
+    margin-top: 1rem;
+    font-family: "Bebas Neue";
+    font-size: 0.8rem;
+    height: 100px;
+    width: 100px;
+  }
 }
