@@ -12,7 +12,7 @@ import "./Reviews.css";
 const Reviews = () => {
   const dispatch = useDispatch();
   const [moreReviews, setMoreReviews] = useState(false);
-  const userList = useSelector((state) => state.users.users)
+  const userList = useSelector((state) => state.users.users);
   const moreReivewHandler = () => {
     setMoreReviews(!moreReviews);
   };
@@ -24,11 +24,11 @@ const Reviews = () => {
   }, [dispatch, moreReviews]);
   return (
     <div className="reviews">
-    <h2>Customer Reviews</h2>
+      <h2>Customer Reviews</h2>
       <div className="container">
-        {userList.map((item) => (
-          <User key={item.id} user={item} />
-        )).slice(0, 4)}
+        {userList
+          .map((item) => <User key={item.login.uuid} user={item} />)
+          .slice(0, 4)}
         <MdOutlineArrowBackIos
           className="back-arrow"
           onClick={moreReivewHandler}
@@ -41,9 +41,9 @@ const Reviews = () => {
         />
       </div>
       <div className="container-small">
-        {userList.map((item) => (
-          <User key={item.id} user={item} />
-        )).slice(0, 2)}
+        {userList
+          .map((item) => <User key={item.login.uuid} user={item} />)
+          .slice(0, 2)}
         <MdOutlineArrowBackIos
           className="back-arrow"
           onClick={moreReivewHandler}
