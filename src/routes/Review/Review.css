@@ -1,3 +1,49 @@
-.review {
-    background-color: black;
+.review-container {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.review-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.review-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.text-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid #99ddda;
+  border-radius: 65px;
+  width: 850px;
+  height: 600px;
+  top: 14rem;
+  right: 6rem;
+}
+
+.user-img {
+  position: absolute;
+  top: 17rem;
+  right: 45rem;
+  height: 180px;
+  width: 180px;
+}
+
+.user-img img {
+  height: 180px;
+  width: 180px;
+  border-radius: 100px;
+  object-fit: cover;
 }
