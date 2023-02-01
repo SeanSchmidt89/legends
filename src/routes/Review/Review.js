@@ -1,13 +1,19 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Footer from "../../components/Footer/Footer";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { FaRegStar, FaRegStarHalf } from "react-icons/fa";
+import { MdKeyboardBackspace } from "react-icons/md";
+import Footer from "../../components/Footer/Footer";
 import "./Review.css";
 
 const Review = () => {
   let { id } = useParams();
   let userList = useSelector((state) => state.users.users);
+  let reviews = useSelector((state) => state.users.reviews);
   let user = userList.filter((user) => user.login.uuid === id);
+  let rating = Math.ceil(Math.random() * (10 - 4) + 4);
+  let rand = Math.floor(Math.random() * 14);
   return (
     <div className="review-container">
       <img
@@ -17,13 +23,67 @@ const Review = () => {
       <div className="review-overlay">
         <div className="text-overlay" />
       </div>
-
-      <div className="user-img">
+      <div className="user-details">
         {user[0].picture && (
           <img src={user[0].picture.large} alt={user[0].name.first} />
         )}
+        {user[0].name ? <p>{user[0].name.first}</p> : null}
+        <div className="rating">
+          {rating === 5 && (
+            <div>
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStarHalf size={21} />
+            </div>
+          )}
+          {rating === 6 && (
+            <div>
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStar size={21} />
+            </div>
+          )}
+          {rating === 7 && (
+            <div>
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStar size={21} /> <FaRegStarHalf size={21} />
+            </div>
+          )}
+          {rating === 8 && (
+            <div>
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStar size={21} /> <FaRegStar size={21} />
+            </div>
+          )}
+          {rating === 9 && (
+            <div>
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStarHalf size={21} />
+            </div>
+          )}
+          {rating === 10 && (
+            <div>
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
+              <FaRegStar size={21} />
+            </div>
+          )}
+        </div>
+        <div className="back-btn">
+          <Link to="/">
+            <p>
+              <span>
+                <MdKeyboardBackspace size={26} />
+              </span>
+              back
+            </p>
+          </Link>
+        </div>
       </div>
-      {user[0].name ? <p>{user[0].name.first}</p> : null}
+      <div className="review">
+        <p className="review-title">{user[0].name.first}'s Review</p>
+        <p>{reviews && reviews[rand]}</p>
+      </div>
+
       <Footer />
     </div>
   );
