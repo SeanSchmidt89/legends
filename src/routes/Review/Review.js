@@ -21,7 +21,7 @@ const Review = () => {
         alt="/"
       />
       <div className="review-overlay">
-        <div className="text-overlay" />
+        {/* <div className="text-overlay" /> */}
       </div>
       <div className="user-details">
         {user[0].picture && (
@@ -65,6 +65,46 @@ const Review = () => {
               <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
               <FaRegStar size={21} /> <FaRegStar size={21} />{" "}
               <FaRegStar size={21} />
+            </div>
+          )}
+        </div>
+        <div className="rating-sm">
+          {rating === 5 && (
+            <div>
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStarHalf size={12} />
+            </div>
+          )}
+          {rating === 6 && (
+            <div>
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStar size={12} />
+            </div>
+          )}
+          {rating === 7 && (
+            <div>
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStar size={12} /> <FaRegStarHalf size={12} />
+            </div>
+          )}
+          {rating === 8 && (
+            <div>
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStar size={12} /> <FaRegStar size={12} />
+            </div>
+          )}
+          {rating === 9 && (
+            <div>
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStarHalf size={12} />
+            </div>
+          )}
+          {rating === 10 && (
+            <div>
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStar size={12} /> <FaRegStar size={12} />{" "}
+              <FaRegStar size={12} />
             </div>
           )}
         </div>
