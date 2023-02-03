@@ -21,7 +21,6 @@ const Review = () => {
         alt="/"
       />
       <div className="review-overlay">
-        {/* <div className="text-overlay" /> */}
       </div>
       <div className="user-details">
         {user[0].picture && (
