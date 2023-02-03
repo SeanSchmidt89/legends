@@ -13,12 +13,11 @@
 .links-container p {
   margin: 1.5rem 2.4rem;
   font-size: 1.3rem;
-  font-family: "Pacifico";
   cursor: pointer;
   position: relative;
 }
 
-p span {
+.links-container span {
   padding: 0rem 0.5rem;
   vertical-align: 7px;
   color: #d6b1f7;
@@ -38,7 +37,7 @@ p span {
     font-size: 1.1rem;
   }
 
-  p span {
+  .links-container span {
     padding: 0rem 0.2rem;
     vertical-align: 7px;
   }
@@ -60,12 +59,11 @@ p span {
   .links-container p {
     margin: 1.5rem 0.7rem;
     font-size: 0.95rem;
-    font-family: "Pacifico";
     cursor: pointer;
     position: relative;
   }
 
-  p span {
+  .links-container span {
     padding: 0rem 0.1rem;
     vertical-align: 7px;
     color: #d6b1f7;
@@ -90,12 +88,11 @@ p span {
   .links-container p {
     margin: 0.5rem 0.7rem;
     font-size: 0.95rem;
-    font-family: "Pacifico";
     cursor: pointer;
     position: relative;
   }
 
-  p span {
+  .links-container span {
     padding: 0rem 0.1rem;
     vertical-align: 7px;
     color: #d6b1f7;
