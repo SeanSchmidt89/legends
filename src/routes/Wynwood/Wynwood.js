@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "../../components/Slider/Slider";
 import AreaInfo from "../../components/AreaInfo/AreaInfo";
+import AreaLinks from "../../components/AreaLinks/AreaLinks";
 import Footer from "../../components/Footer/Footer";
 import "./Wynwood.css";
 
@@ -25,6 +26,7 @@ const Wynwood = () => {
   return (
     <div className="wynwood">
       <Slider data={props} />
+      <AreaLinks />
       <AreaInfo data={props} />
       <Footer />
     </div>

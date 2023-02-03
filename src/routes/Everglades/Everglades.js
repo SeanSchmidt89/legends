@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "../../components/Slider/Slider";
 import AreaInfo from "../../components/AreaInfo/AreaInfo";
+import AreaLinks from "../../components/AreaLinks/AreaLinks";
 import Footer from "../../components/Footer/Footer";
 import "./Everglades.css";
 
@@ -28,6 +29,7 @@ const Everglades = () => {
   return (
     <div>
       <Slider data={props} />
+      <AreaLinks />
       <AreaInfo data={props} />
       <Footer />
     </div>

@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { FaRegStar, FaRegStarHalf } from "react-icons/fa";
 import { MdKeyboardBackspace } from "react-icons/md";
+import AreaLinks from "../../components/AreaLinks/AreaLinks";
 import Footer from "../../components/Footer/Footer";
 import "./Review.css";
 
@@ -20,8 +21,7 @@ const Review = () => {
         src="https://images.unsplash.com/photo-1559554351-479eb824b725?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
         alt="/"
       />
-      <div className="review-overlay">
-      </div>
+      <div className="review-overlay"></div>
       <div className="user-details">
         {user[0].picture && (
           <img src={user[0].picture.large} alt={user[0].name.first} />
@@ -122,7 +122,7 @@ const Review = () => {
         <p className="review-title">{user[0].name.first}'s Review</p>
         <p>{reviews && reviews[rand]}</p>
       </div>
-
+      <AreaLinks />
       <Footer />
     </div>
   );
