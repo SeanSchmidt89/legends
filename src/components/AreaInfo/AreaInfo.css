@@ -92,7 +92,7 @@
   }
 
   .area-info .area-text {
-    top: 3.5rem;
+    top: 1.4rem;
     right: 2rem;
     width: 250px;
   }
@@ -213,7 +213,7 @@
     top: auto;
     bottom: auto;
     width: 360px;
-    height: 680px;
+    height: 700px;
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
