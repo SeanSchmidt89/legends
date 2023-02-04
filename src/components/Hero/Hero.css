@@ -133,15 +133,20 @@ li span {
 }
 
 @media screen and (max-width: 680px) {
-  /* .hero {
-    height: 100vh;
+  .hero {
+    height: 850px;
   }
 
   .hero img {
-    height: 100vh;
-  } */
+    height: 850px;
+  }
+
+  .hero .overlay {
+    height: 850px;
+  }
 
   .hero-text {
+    top: 21rem;
     left: 3rem;
     font-size: 0.9rem;
     width: 320px;
@@ -176,7 +181,7 @@ li span {
 
 @media screen and (max-width: 420px) {
   .hero-text {
-    top: 23rem;
+    top: 21rem;
     left: 1.5rem;
     font-size: 0.8rem;
     width: 260px;

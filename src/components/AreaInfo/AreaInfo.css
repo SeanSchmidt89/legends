@@ -1,6 +1,6 @@
 .area-info {
   width: 100%;
-  height: 110vh;
+  height: 950px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
   max-width: 1100px;
   background-color: #99ddda;
   width: 95%;
-  height: 85vh;
+  height: 790px;
 }
 
 .area-info .area-text {
@@ -50,11 +50,13 @@
 
 @media screen and (max-width: 1300px) {
   .area-info {
-    height: 95vh;
+    height: 860px;
   }
 
   .area-data {
     max-width: 850px;
+    height: 770px;
+    top: -0.5rem;
   }
 
   .area-info .area-text {
@@ -65,7 +67,7 @@
 
   .area-img {
     left: -4rem;
-    top: -1rem;
+    top: -2rem;
     width: 500px;
     height: 830px;
   }
@@ -81,12 +83,12 @@
 
 @media screen and (max-width: 1010px) {
   .area-info {
-    height: 88vh;
+    height: 800px;
   }
 
   .area-data {
     max-width: 690px;
-    height: 75vh;
+    height: 640px;
   }
 
   .area-info .area-text {
@@ -97,7 +99,7 @@
 
   .area-img {
     left: 0rem;
-    top: -1.8rem;
+    top: -4rem;
     width: 380px;
     height: 760px;
   }
@@ -113,12 +115,12 @@
 
 @media screen and (max-width: 750px) {
   .area-info {
-    height: 92vh;
+    height: 800px;
   }
 
   .area-data {
     max-width: 690px;
-    height: 91vh;
+    height: 780px;
     background-color: transparent;
     position: relative;
   }
@@ -164,9 +166,13 @@
 }
 
 @media screen and (max-width: 460px) {
+  .area-info {
+    height: 720px;
+  }
+
   .area-data {
     max-width: 390px;
-    height: 75vh;
+    height: 700px;
     background-color: transparent;
     position: relative;
   }

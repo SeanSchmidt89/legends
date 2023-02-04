@@ -1,8 +1,8 @@
 .plan-trip {
   position: relative;
   width: 100%;
-  height: 120vh;
-  padding-bottom: 6rem;
+  height: 1000px;
+  padding-bottom: 19rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   position: relative;
   width: 90%;
   max-width: 1400px;
-  height: 60vh;
+  height: 510px;
   background-color: #99ddda;
   z-index: 10;
 }
@@ -24,14 +24,13 @@
   font-size: 1.4rem;
 }
 
-
 .plan-container {
   position: absolute;
   top: 3.5rem;
   right: 1rem;
   width: 60%;
   max-width: 850px;
-  height: 90vh;
+  height: 775px;
   display: grid;
   gap: 0.8rem;
   grid-template-columns: 1fr 1fr;
@@ -64,7 +63,7 @@
 
 .bar {
   position: absolute;
-  top: 12rem;
+  top: 4.5rem;
   width: 75%;
   max-width: 1400px;
   height: 750px;
@@ -76,14 +75,14 @@
 @media screen and (max-width: 1250px) {
   .plan-trip {
     width: 100%;
-    height: 95vh;
-    padding-bottom: 0rem;
+    height: 840px;
+    padding-bottom: 3rem;
   }
 
   .plan-backdrop {
     width: 90%;
+    height: 500px;
     max-width: 1400px;
-    height: 60vh;
     background-color: #99ddda;
   }
 
@@ -96,10 +95,10 @@
   .plan-container {
     position: absolute;
     top: -4rem;
-    right: 18rem;
+    right: 17.6rem;
     width: 60%;
     max-width: 850px;
-    height: 55vh;
+    height: 500px;
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 240px 240px 240px;
@@ -121,7 +120,7 @@
 
   .bar {
     position: absolute;
-    top: 9rem;
+    top: 7.4rem;
     width: 78%;
     height: 600px;
     background: transparent;
@@ -142,7 +141,7 @@
     right: 23rem;
     width: 60%;
     max-width: 850px;
-    height: 55vh;
+    height: 460px;
   }
 
   .img-one {
@@ -162,7 +161,7 @@
 
   .bar {
     position: absolute;
-    top: 9rem;
+    top: 7.4rem;
     width: 78%;
     height: 600px;
     background: transparent;
@@ -180,10 +179,10 @@
 
   .plan-container {
     top: -4rem;
-    right: 10rem;
+    right: 10.1rem;
     width: 60%;
     max-width: 850px;
-    height: 55vh;
+    height: 450px;
     display: grid;
     gap: 0.5rem;
     grid-template-columns: 200px 200px;
@@ -206,7 +205,8 @@
   }
 
   .bar {
-    top: 9rem;
+    top: 7.4rem;
+    margin-right: 0.78rem;
     width: 78%;
     height: 600px;
     background: transparent;
@@ -218,9 +218,10 @@
 @media screen and (max-width: 460px) {
   .plan-trip {
     width: 100%;
-    height: 95vh;
-    padding-top: 3rem;
-    padding-bottom: 0rem;
+    height: 740px;
+    margin: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
   }
 
   .plan-info {
@@ -231,7 +232,7 @@
 
   .plan-container {
     top: -4rem;
-    right: 8.4rem;
+    right: 8.45rem;
     grid-template-columns: 165px 165px;
     grid-template-rows: 180px 280px 180px;
   }
