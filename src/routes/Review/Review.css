@@ -1,20 +1,21 @@
 .review-container {
-  height: 110vh;
+  height: 960px;
   width: 100%;
+  margin: 0rem;
   background-color: black;
   position: relative;
 }
 
 .review-container img {
   width: 100%;
-  height: 108vh;
+  height: 940px;
   object-fit: cover;
 }
 
 .review-overlay {
   background-color: rgba(0, 0, 0, 0.55);
   width: 100%;
-  height: 110vh;
+  height: 950px;
   position: absolute;
   top: 0;
   left: 0;
