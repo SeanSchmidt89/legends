@@ -10,8 +10,8 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      <Hero />
-      <PlanTrip />
+      {/* <Hero />
+      <PlanTrip /> */}
       <AreaLinks />
       <PhotoGrid />
       <Reviews />
