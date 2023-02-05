@@ -1,0 +1,31 @@
+.about {
+  height: 950px;
+  width: 100%;
+  background-color: black;
+  border: 1px solid red;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  z-index: 5;
+}
+
+.img-container img {
+  width: 400px;
+  height: 650px;
+  object-fit: cover;
+  z-index: 5;
+}
+
+.about-overlay {
+  position: absolute;
+  margin-top: -41rem;
+  width: 400px;
+  height: 660px;
+  background-color: red;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 10;
+}

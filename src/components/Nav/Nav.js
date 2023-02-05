@@ -28,7 +28,7 @@ const Nav = () => {
             <Link to="/">
               <li>Catalog</li>
             </Link>
-            <Link to="/">
+            <Link to="/about">
               <li>About</li>
             </Link>
           </ul>
@@ -42,10 +42,14 @@ const Nav = () => {
               </li>
             </Link>
             <Link onClick={sideNavHandler} to="/">
-              <li><p>-</p>Catalog<p>-</p></li>
+              <li>
+                <p>-</p>Catalog<p>-</p>
+              </li>
             </Link>
             <Link onClick={sideNavHandler} to="/">
-              <li><p>-</p>About<p>-</p></li>
+              <li>
+                <p>-</p>About<p>-</p>
+              </li>
             </Link>
           </ul>
         </div>

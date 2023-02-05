@@ -7,6 +7,7 @@ import Brickell from "./routes/Brickell/Brickell";
 import MiamiBeach from "./routes/MiamiBeach/MiamiBeach";
 import Everglades from "./routes/Everglades/Everglades";
 import Review from "./routes/Review/Review";
+import About from "./routes/About/About";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/miamibeach" element={<MiamiBeach />} />
         <Route path="/everglades" element={<Everglades />} />
         <Route path="/review/:id" element={<Review />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );
