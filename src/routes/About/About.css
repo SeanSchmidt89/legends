@@ -6,7 +6,7 @@
   align-items: center;
   background-color: black;
   padding-top: 16rem;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 
 .about-data {
@@ -37,16 +37,26 @@
 .about-text {
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 300px;
   height: 850px;
   z-index: 20;
 }
 
 .about-text p {
   color: white;
-  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.about-text .view-code {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-family: 'Pacifico';
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .about-overlay {

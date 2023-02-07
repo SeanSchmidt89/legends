@@ -15,8 +15,11 @@ const About = () => {
           </div>
           <div className="about-text">
             <p>
-              blah blah blah this was desgined with react js and redux toolkit
+              This website was designed with React JS, Redux toolkit, React
+              Router and React Icons. It uses Axios to pull from an API at
+              randomuser.me to generate users for customer reviews.
             </p>
+            <a href="https://github.com/SeanSchmidt89/legends" className="view-code">View my code</a>
           </div>
         </div>
         <div className="about-overlay"></div>
