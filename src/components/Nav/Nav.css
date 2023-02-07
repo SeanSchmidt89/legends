@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5;
+  z-index: 500;
 }
 
 .nav h1 {
@@ -53,7 +53,7 @@
     right: 0;
     display: flex;
     justify-content: center;
-    z-index: 20;
+    z-index: 200;
   }
 
   .side-nav ul {
@@ -79,7 +79,7 @@
   .x {
     display: flex;
     cursor: pointer;
-    z-index: 20;
+    z-index: 200;
   }
 
   .nav li {

@@ -125,17 +125,6 @@
     position: relative;
   }
 
-  .area-info .area-text {
-    position: absolute;
-    display: flex;
-    left: auto;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    width: 300px;
-    z-index: 20;
-  }
-
   .area-img {
     position: absolute;
     display: flex;
@@ -145,6 +134,17 @@
     bottom: auto;
     width: 420px;
     height: 770px;
+  }
+
+  .area-info .area-text {
+    position: absolute;
+    display: flex;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: 300px;
+    z-index: 20;
   }
 
   .area-info p {
