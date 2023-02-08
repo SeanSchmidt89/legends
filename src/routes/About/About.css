@@ -54,7 +54,7 @@
 .about-text .view-code {
   margin-top: 1rem;
   font-size: 1.1rem;
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
   text-decoration: underline;
   cursor: pointer;
 }
@@ -68,4 +68,84 @@
   height: 850px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
+}
+
+@media screen and (max-width: 850px) {
+  .about {
+    height: 1000px;
+    padding-top: 8rem;
+    padding-bottom: 0rem;
+  }
+
+  .about-data {
+    width: 340px;
+    height: 660px;
+  }
+
+  .about-img {
+    width: 340px;
+    height: 660px;
+  }
+
+  .about-text {
+    width: 230px;
+    height: 660px;
+    z-index: 20;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .about-text .view-code {
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .about-overlay {
+    width: 340px;
+    height: 660px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about {
+    height: 780px;
+    padding-top: 10rem;
+    padding-bottom: 0rem;
+  }
+
+  .about-data {
+    width: 280px;
+    height: 530px;
+  }
+
+  .about-img {
+    width: 280px;
+    height: 530px;
+  }
+
+  .about-text {
+    width: 180px;
+    height: 530px;
+    z-index: 20;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .about-text .view-code {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .about-overlay {
+    width: 280px;
+    height: 530px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
 }

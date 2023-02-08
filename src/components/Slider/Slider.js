@@ -36,6 +36,12 @@ const Slider = ({ data }) => {
         onClick={forwardHandler}
         size={50}
       />
+      <MdOutlineArrowBackIos className="back-sm" onClick={backHandler} size={28} />
+      <MdOutlineArrowForwardIos
+        className="forward-sm"
+        onClick={forwardHandler}
+        size={28}
+      />
       <div className="slider-info">
         <h2>{infoArr[0]}</h2>
         <p>{infoArr[1]}</p>

@@ -65,6 +65,14 @@
   color: white;
 }
 
+.back-sm {
+  display: none;
+}
+
+.forward-sm {
+  display: none;
+}
+
 .slider-overlay {
   position: absolute;
   top: 0;
@@ -103,13 +111,29 @@
   }
 
   .back {
-    left: 1rem;
-    top: 29rem;
+    display: none;
   }
 
   .forward {
+    display: none;
+  }
+
+  .back-sm {
+    position: absolute;
+    display: flex;
+    color: white;
+    left: 1rem;
+    top: 29rem;
+    cursor: pointer;
+  }
+
+  .forward-sm {
+    position: absolute;
+    display: flex;
+    color: white;
     right: 1rem;
     top: 29rem;
+    cursor: pointer;
   }
 }
 
@@ -128,13 +152,13 @@
     font-size: 0.95rem;
   }
 
-  .back {
-    left: 0.3rem;
-    top: 30rem;
+  .back-sm {
+    left: 0.1rem;
+    top: 32rem;
   }
 
-  .forward {
-    right: 0.3rem;
-    top: 30rem;
+  .forward-sm {
+    right: 0.1rem;
+    top: 32rem;
   }
 }
