@@ -91,6 +91,11 @@ li span {
   top: -0.5rem;
 }
 
+.places-btn .book-now {
+  margin-left: 0.5rem;
+  color: #d6b1f7;
+}
+
 @media screen and (max-width: 1300px) {
   .hero-text {
     left: 13rem;

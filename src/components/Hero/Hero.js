@@ -21,21 +21,32 @@ const Hero = () => {
         <p>Book with us and recive exculsive offers</p>
         <div className="places-btn">
           <button onClick={placesHandler}>Explore</button>
+          <button className="book-now">Book Now</button>
           <ul className={places ? "show" : "hide"}>
             <Link to="/brickell">
-              <li><span>___</span> Brickell</li>
+              <li>
+                <span>___</span> Brickell
+              </li>
             </Link>
             <Link to="/miamibeach">
-              <li><span>___</span> Miami Beach</li>
+              <li>
+                <span>___</span> Miami Beach
+              </li>
             </Link>
             <Link to="/wynwood">
-              <li><span>___</span> Wynwood</li>
+              <li>
+                <span>___</span> Wynwood
+              </li>
             </Link>
             <Link to="/everglades">
-              <li><span>___</span> Everglades</li>
+              <li>
+                <span>___</span> Everglades
+              </li>
             </Link>
             <Link to="/little-havana">
-              <li><span>___</span> Little Havana</li>
+              <li>
+                <span>___</span> Little Havana
+              </li>
             </Link>
           </ul>
         </div>
