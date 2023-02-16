@@ -23,7 +23,7 @@ const Reviews = () => {
       .catch((error) => console.log(error.massage));
   }, [dispatch, moreReviews]);
   return (
-    <div className="reviews">
+    <div className="reviews" id='reviews'>
       <h2>Customer Reviews</h2>
       <div className="container">
         {userList

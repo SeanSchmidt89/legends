@@ -25,9 +25,9 @@ const Nav = () => {
             <Link to="/">
               <li>Home</li>
             </Link>
-            <Link to='/'>
-              <li>Catalog</li>
-            </Link>
+            <a href="#reviews">
+              <li>Reviews</li>
+            </a>
             <Link to="/about">
               <li>About</li>
             </Link>
@@ -41,11 +41,11 @@ const Nav = () => {
                 <p>-</p>Home<p>-</p>
               </li>
             </Link>
-            <Link onClick={sideNavHandler} to="/">
+            <a onClick={sideNavHandler} href="#reviews">
               <li>
-                <p>-</p>Catalog<p>-</p>
+                <p>-</p>Reviews<p>-</p>
               </li>
-            </Link>
+            </a>
             <Link onClick={sideNavHandler} to="/about">
               <li>
                 <p>-</p>About<p>-</p>

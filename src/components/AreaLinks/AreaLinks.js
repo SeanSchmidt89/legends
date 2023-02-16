@@ -4,7 +4,7 @@ import "./AreaLinks.css";
 
 const AreaLinks = () => {
   return (
-    <div className="arealinks">
+    <div className="arealinks" id="links">
       <div className="links-container">
         <div className="one">
           <Link to="/brickell" className="brickell">

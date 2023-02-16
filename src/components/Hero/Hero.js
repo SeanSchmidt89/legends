@@ -21,7 +21,7 @@ const Hero = () => {
         <p>Book with us and recive exculsive offers</p>
         <div className="places-btn">
           <button onClick={placesHandler}>Explore</button>
-          <button className="book-now">Book Now</button>
+          <a href="#links"><button className="book-now">Book Now</button></a>
           <ul className={places ? "show" : "hide"}>
             <Link to="/brickell">
               <li>

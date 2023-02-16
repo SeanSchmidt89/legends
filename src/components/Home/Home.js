@@ -14,7 +14,7 @@ const Home = () => {
       <PlanTrip />
       <AreaLinks />
       <PhotoGrid />
-      <Reviews id='reviews' />
+      <Reviews />
       <Footer />
     </div>
   );
